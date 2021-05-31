@@ -14,6 +14,8 @@ app.get('/login', async (req, res) => {
   }
 });
 
-app.listen(3333, async () => {
+var port = process.env.PORT || 3000;
+
+app.listen(port, async () => {
   console.log('Server em execução e arquivo criado!');
 });
